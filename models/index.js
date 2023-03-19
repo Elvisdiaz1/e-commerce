@@ -9,7 +9,7 @@ Product.belongsTo(Category, {
   foreignKey: "category_id",
 });
 
-// Categories have many Products
+// Categories have many Products. Category is the "owner"
 Category.hasMany(Product, {
   foreignKey: "category_id",
   onDelete: "CASCADE",
